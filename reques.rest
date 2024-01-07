@@ -1,0 +1,39 @@
+POST 'http://localhost:3000/admin'
+################################################################
+POST http://localhost:5174/user
+Content-Type: application/json 
+
+{
+    "namaLengkap": "sdfdfd",
+    "email":"user14@example.com",
+    "password": "12345678"
+}
+####
+PUT http://localhost:5174/laporan/6
+Content-Type: application/json 
+
+{
+    "status": 1
+}
+####
+PUT http://localhost:5174/laporan/5
+Content-Type: application/json 
+
+{
+    "status": 1
+}
+####
+GET http://localhost:5174/user
+Content-Type: application/json 
+
+{
+    "namaLengkap": "asdfsaddfdd"
+}
+####
+POST http://192.168.104.46:5174/
+Content-Type: application/json 
+
+{
+    "email": "jhondoe@example.com",
+    "password": "12345678"
+}
